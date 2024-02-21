@@ -1,0 +1,79 @@
+body, html {
+    height: 0%;
+    margin: 0;
+    padding: 20px;
+    /* margin-top: 70px; */
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Lables/download.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    width: 400px;
+    background-color: rgba(0,0,0,0) !important; /* Transparent background */
+
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  }
+
+.card-header h3, .links, .remember {
+    color:black;
+    text-align: center;
+    /* border:1px solid black; Centering card header text */
+}
+
+.input-group-prepend {
+    margin-right: -1px; /* Remove any unwanted spacing between icon and input */
+}
+
+.input-group-prepend .input-group-text {
+    background-color: #FFC312; /* Yellow background */
+    border: 0; /* Remove border if present */
+    color: black; /* Icon color */
+}
+
+.input-group-text {
+    padding: .10rem .75rem; 
+}
+
+.form-control {
+    border-radius: 0; /* Making input field squared, optional */
+}
+
+/* Additional styles for alignment and appearance */
+.input-group {
+    justify-content: center; /* Centering input group if necessary */
+    display: flex;
+    padding: 10px;
+    height: 25px;
+}
+
+.login_btn {
+    width: 30%;
+    background-color: #FFC312;
+    color: black;
+    margin-left: 140px;
+    /* margin-bottom: 50px; */
+}
+
+.login_btn:hover {
+    background-color: white;
+}
+.social_icon {
+    display: flex;
+    align-items: center;
+    margin-left: 270px;
+    height:8px;
+}

@@ -1,0 +1,64 @@
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Style table headers */
+  .table th {
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+  }
+  
+  /* Style table rows */
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Alternate row background color for better readability */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the buttons for editing and deleting */
+  .button edit-button {
+    padding: 7px ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .edit-button {
+    background-color: #FFA500;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336; 
+    color: white;
+  }
+  
+  /* Style the input fields */
+  .input-field {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /* Adjust the width of specific columns if needed */
+  .name-column, .email-column, .rollnumber-column {
+    width: 25%;
+  }
+  
+  .action-column {
+    width: 25%;
+  }
+  
