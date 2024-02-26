@@ -77,3 +77,23 @@ body, html {
     margin-left: 270px;
     height:8px;
 }
+.password-container {
+    position: relative;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .signup-input.password-input {
+    width: 100%;
+    padding-right: 40px; 
+  }
+  
+  .password-eye-icon {
+    position: absolute;
+    right: 10px; 
+    transform: translateY(-240%);
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  

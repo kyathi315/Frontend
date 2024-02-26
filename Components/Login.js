@@ -7,7 +7,6 @@ import {
   faGooglePlusSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import Swal from "sweetalert2";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from "react-router-dom";
@@ -36,17 +35,14 @@ function Login() {
     }  catch (error) {
       console.error("Login error", error);
  
-      if (error.response && error.response.data) {
-  
-        if (error.response.data === 400) {
-          toast.error('Incorrect password!');
+      if (error.response && error.response.status) {
+        if (error.response.status === 400) {
+          toast.error('Incorrect username or password!');
         } else {
-         
-          toast.error(error.response.data);
+          toast.error('Something went wrong!');
         }
       } else {
-      
-        toast.error('Login failed!');
+        toast.error('Network error or server is not responding.');
       }
     }
   }
